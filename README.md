@@ -1,1 +1,19 @@
 # Vente-Voiture-Projet
+
+Le garage du Listenbourg m'a contacté pour la modernisationde son garage en créant un site web qui lui permettrait de gérer les voitures en stock et de l'afficher pour les clients.
+
+## Technologies utilisées : 
+
+* Github
+* LAMP ([title](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mariadb-php-lamp-stack-on-debian-11 "Tutoriel pout installer un LAMP"))
+* Vscode
+* HTML/CSS/Javascript
+* Php/Mysql
+* Putty/WinSCP
+
+## Fonctionnalitées : 
+
+* AFficher la liste des voitures
+* Ajouter des voitures
+* Supprimer des voitures
+* Modifier des voitures
