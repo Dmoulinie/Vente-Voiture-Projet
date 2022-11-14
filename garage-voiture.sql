@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
-(1, 'admin', 'admin');
+(1, 'admin', '22063751573e5dfee590a6a131530f5f8468e047a8a6aa0eacd08d8dd87a4d15');
 
 -- --------------------------------------------------------
 
