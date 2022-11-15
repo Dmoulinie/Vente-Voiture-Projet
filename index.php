@@ -84,21 +84,26 @@
                 $description = $row['description'];
                 ?>
 
+	<?php
+		$imgSource = 'src= "/img/'.str_replace(' ', '_', $imma);
 
+	?>
 
                 <div class="card" style="width:30rem">
                     <img class="card-img-top" alt="Image non disponible."
-                        <?php if (file_exists("img/$imma.jpg" )) {
-                            echo('src="img/'. $imma. '.jpg"');
-                        } else if (file_exists("img/$imma.png")) {
-                            echo('src="img/' .$imma. '.png"');
-                        } else if (file_exists("img/$imma.jpeg")) {
-                            echo('src="img/' .$imma. '.jpeg"');
+
+                        <?php if (file_exists($imgSource.'.jpg"')) {
+                            echo($imgSource.'.jpg');
+                        } else if (file_exists($imgSource.'.jpeg"')) {
+                            echo($imgSource.'.jpeg');
+                        } else if (file_exists($imgSource.'.png"')) {
+                            echo($imgSource.'.png');
                         } else {
-                            echo('src="img/undefined.png"');
+                            echo($imgSource.'.jpeg"');
+
                         }
                         ?> >
-                        
+                       
                     <div class="card-body">
                         <h5 class="card-title"><?php echo($marque . " " .$modele) ?></h5>
                         <p class="card-text text-cut" id="<?php echo($id) ?>" >

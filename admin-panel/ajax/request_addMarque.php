@@ -22,7 +22,10 @@ if (isset($_POST['action']) && isset($_POST['marque'])) {
     $req = $conn->prepare("INSERT INTO `marque`(`marque`) VALUES (:marque)");
     $req->bindParam(':marque',$marque, PDO::PARAM_STR);
     $res = $req->execute();
-    if ($res != 1) { echo("erreur"); die(); } // Arrete le code si la requete echoue
+    if ($res != 1) {
+ 	echo("erreur");
+	die();
+    } // Arrete le code si la requete echoue
     
     echo("success"); // Aucun probleme n'est survenu
 }
